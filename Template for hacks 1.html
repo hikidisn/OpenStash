@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>(insert title here)</title>
+    <meta http-equiv="refresh" content="1;URL=(insert link here, do not put the iv load policy here!!!!)">
+</head>
+<body>
+    <div>
+        <iframe style="border: medium none ; overflow: hidden; width: 800px; height: 300px;"
+                src="insert link here please put the iv load policy here!!!!!!!” 
+                frameborder="0"
+                scrolling="yes"></iframe>
+    </div>
+    <script>
+        setInterval(function()
+        {
+            console.log("here");
+            var elem=document.getElementsByTagName('iframe')[0];
+            elem.src=elem.getAttribute("src");
+        }, 45000);
+    </script>
+</body>
+</html>
